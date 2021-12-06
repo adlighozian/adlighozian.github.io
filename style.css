@@ -107,6 +107,12 @@ html {
 
 /* navbar text animation */
 
+.navbar .menu li a span {
+    position: absolute;
+    color: white;
+    z-index: 1;
+}
+
 .navbar .menu li {
     list-style: none;
     display: inline-flex;
@@ -178,13 +184,13 @@ html {
     width: 50%;
 }
 
-.navbar .menu li a span {
-    position: absolute;
-    color: white;
-    z-index: 1;
+.navbar.sticky .menu li.active a::before {
+    width: 100%;
+    background: black;
 }
 
-.navbar.sticky .menu li.active a {
+.navbar.sticky .menu li.active a::after {
+    width: 100%;
     background: black;
 }
 
@@ -293,6 +299,15 @@ html {
     height: 100%;
     background: linear-gradient(#252525, #44D62C);
     transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
+}
+
+.home .cube .top #cube1 {
+    font-size: 50px;
+}
+
+.home .cube .top p {
+    color: white;
+    font-size: 25px;
 }
 
 
