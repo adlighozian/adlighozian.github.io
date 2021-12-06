@@ -1,6 +1,6 @@
 // animasi typing
 var typed = new Typed(".typing-1", {
-    strings: ["back-end developer", "youtuber", "programer", "front-end developer"],
+    strings: ["back-end developer", "UI/UX designer", "programmer", "front-end developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
