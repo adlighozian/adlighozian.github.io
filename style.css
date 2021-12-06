@@ -1,10 +1,17 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.top {
+    height: 2px;
 }
 
 
@@ -18,6 +25,8 @@
     z-index: 9999;
     bottom: 10px;
     transition: all 0.3s ease;
+    cursor: pointer;
+    pointer-events: none;
     opacity: 0;
 }
 
@@ -29,12 +38,9 @@
 
 .scroll-up-btn #rocket {
     color: #44D62C;
-    position: absolute;
     font-size: 35px;
     -webkit-text-stroke: 1px #000;
     animation: animateRocket 0.2s linear infinite;
-    cursor: pointer;
-    pointer-events: none;
     opacity: 1;
 }
 
@@ -69,15 +75,12 @@
 }
 
 .navbar.sticky .logo a {
-    color: white;
+    color: black;
 }
 
-
-/* .navbar.sticky .menu li a {
-    color: white;
-    transition: all 0.2 s ease;
-    font-size: 20px;
-} */
+.navbar.sticky .logo a span {
+    color: black;
+}
 
 .navbar .logo a {
     color: #44D62C;
@@ -131,7 +134,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 4px;
+    width: 0px;
     height: 100%;
     background: black;
     transition: 0.5s ease-in-out;
@@ -142,7 +145,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 4px;
+    width: 0px;
     height: 100%;
     background: black;
     transition: 0.5s ease-in-out;
@@ -153,7 +156,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 4px;
+    width: 0;
     height: 100%;
     background: #44D62C;
     transition: 0.5s ease-in-out;
@@ -164,7 +167,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 4px;
+    width: 0;
     height: 100%;
     background: #44D62C;
     transition: 0.5s ease-in-out;
@@ -181,6 +184,10 @@
     z-index: 1;
 }
 
+.navbar.sticky .menu li.active a {
+    background: black;
+}
+
 
 /* home section */
 
@@ -191,7 +198,7 @@
     color: white;
     min-height: 500px;
     font-family: 'ubuntu', sans-serif;
-    border-bottom: solid #44D62C;
+    border-bottom: royalblue solid;
 }
 
 .home .max-width {
@@ -229,10 +236,6 @@
     animation: animatecube 10s linear infinite;
     top: 330px;
     left: 70px;
-}
-
-.home .cube:hover {
-    animation: animatecube 1s linear infinite;
 }
 
 @keyframes animatecube {
@@ -293,7 +296,7 @@
 }
 
 
-/* animasi button */
+/* home animasi button */
 
 .home .home-content a {
     position: relative;
@@ -358,13 +361,37 @@
 }
 
 
-/* home 2 */
+/* about */
 
-.home2 {
+.about {
     display: flex;
     background: url('home2.png') no-repeat center;
     min-height: 100vh;
-    border-bottom: solid #44D62C;
     justify-content: center;
     align-items: center;
+    border-bottom: royalblue solid;
+}
+
+
+/* skills */
+
+.skills {
+    display: flex;
+    background: url('home2.png') no-repeat center;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border-bottom: royalblue solid;
+}
+
+
+/* contact */
+
+.contact {
+    display: flex;
+    background: url('home2.png') no-repeat center;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border-bottom: royalblue solid;
 }
