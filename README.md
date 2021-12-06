@@ -1,2 +1,0 @@
-# adlighozian.github.io
-portfolio
