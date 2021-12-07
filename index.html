@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Muhammad Adli Ghozian</title>
+    <title>Portfolio</title>
 
     <!-- css -->
     <link rel="stylesheet" href="style.css">
@@ -26,6 +26,9 @@
     <div class="scroll-up-btn">
         <i class='bx bx-rocket' id="rocket"></i>
     </div>
+
+
+    <!-- navbar -->
 
     <nav class="navbar">
         <div class="max-width">
@@ -58,13 +61,16 @@
     <section class="top" style="background: black;" id="top">
     </section>
 
+
+    <!-- halaman satu -->
+
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Hello my name is</div>
                 <div class="text-2">Muhammad Adli Ghozian</div>
                 <div class="text-3">And I'm a <span class="typing-1"></span></div>
-                <a href="#" style="--clr:#44D62C;--i:0;"><span>Hire me</span></a>
+                <a href="#" style="--clr:#44D62C;--i:0;"><span>Contact me</span></a>
             </div>
         </div>
 
@@ -84,17 +90,102 @@
 
     </section>
 
+
+    <!-- Halaman Dua -->
+
     <section class="about" id="about">
-        <p style="color: #44D62C;font-size: 100px;">About</p>
+        <!-- Previous Button -->
+        <button id="prev-btn">
+            <i class='bx bxs-log-in-circle bx-rotate-180' ></i>
+        </button>
+
+        <!-- Book -->
+        <div id="book" class="book">
+            <!-- Paper 1 -->
+            <div id="p1" class="paper">
+                <div class="front">
+                    <div id="f1" class="front-content">
+                        <img src="page1.png" alt="">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b1" class="back-content">
+                        <img src="page2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 2 -->
+            <div id="p2" class="paper">
+                <div class="front">
+                    <div id="f2" class="front-content">
+                        <img src="page3.png" alt="">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b2" class="back-content">
+                        <img src="page4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Paper 3 -->
+            <div id="p3" class="paper">
+                <div class="front">
+                    <div id="f3" class="front-content">
+                        <img src="page5.png" alt="">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b3" class="back-content">
+                        <img src="page6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Next Button -->
+        <button id="next-btn">
+            <i class='bx bxs-log-in-circle' ></i>
+         </button>
     </section>
 
+
+    <!-- Halaman Tiga -->
+
     <section class="skills" id="skills">
-        <p style="color: #44D62C;font-size: 100px;">Skills</p>
+        <div class="card">
+            <div class="icon"></div>
+            <div class="content"></div>
+        </div>
+        <div class="card">
+            <div class="icon"></div>
+            <div class="content"></div>
+        </div>
+        <div class="card">
+            <div class="icon"></div>
+            <div class="content"></div>
+        </div>
     </section>
+
+
+    <!-- Halaman 4 -->
 
     <section class="contact" id="contact">
         <p style="color: #44D62C;font-size: 100px;">Contact</p>
     </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="wave">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <p>© All Rights Reserved 2021 | Made by Love <i class='bx bxs-heart' style='color:#d21313'></i></p>
+    </footer>
+
 
     <!-- js -->
     <script src="script.js"></script>
