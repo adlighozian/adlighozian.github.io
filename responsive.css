@@ -127,6 +127,15 @@
     }
 }
 
+
+/* ............................................................................... */
+
+
+/* ............................................................................... */
+
+
+/* ............................................................................... */
+
 @media screen and (max-width:421px) {
     /* navbar */
     .navbar {
@@ -253,6 +262,19 @@
     .scroll-up-btn,
     .scroll-up-btn.show,
     .scroll-up-btn #rocket {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:970px) {
+    * {
+        background: black;
+    }
+    body {
+        bottom: 0;
+        left: 0;
+        width: 0px;
+        height: 0px;
         opacity: 0;
     }
 }

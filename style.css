@@ -204,7 +204,6 @@ html {
     color: white;
     min-height: 500px;
     font-family: 'ubuntu', sans-serif;
-    border-bottom: royalblue solid;
 }
 
 .home .max-width {
@@ -384,7 +383,6 @@ html {
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-    border-bottom: royalblue solid;
 }
 
 
@@ -396,7 +394,6 @@ html {
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-    border-bottom: royalblue solid;
 }
 
 
@@ -405,9 +402,77 @@ html {
 .contact {
     display: flex;
     background: url('home2.png') no-repeat center;
-    min-height: 100vh;
+    min-height: 60vh;
     justify-content: center;
     align-items: center;
+}
+
+.contact .sci {
+    display: flex;
+    position: relative;
+}
+
+.contact .sci li {
+    list-style: none;
+}
+
+.contact .sci li a {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 120px;
+    background: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 60px;
+    font-size: 4em;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    transition: background 0.50s;
+    box-shadow: 0 25px 35px rgb(255, 255, 255, 0.2);
+}
+
+.contact .sci li::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8vw;
+    pointer-events: none;
+    font-weight: 700;
+    transition: 0.5s;
+    opacity: 0;
+    color: #44D62C;
+    font-family: 'ubuntu', sans-serif;
+}
+
+.contact .sci li:hover::before {
+    opacity: 1;
+    transform: translate(-50%, calc(-270% + 150px));
+}
+
+.js-tilt-glare {
+    border-radius: 10px;
+}
+
+.contact .sci li a:hover {
+    background: #44D62C;
+}
+
+.contact .sci li a bx {
+    transition: 0.25s;
+    pointer-events: none;
+}
+
+.contact .sci li a:hover i {
+    color: white;
+    transition: 0.5s;
+    transform: scale(1.75) translateZ(50px);
 }
 
 

@@ -170,7 +170,15 @@
     <!-- Halaman 4 -->
 
     <section class="contact" id="contact">
-        <p style="color: #44D62C;font-size: 100px;">Contact</p>
+        <ul class="sci">
+            <li data-text="linkedin">
+                <a href="https://www.linkedin.com/in/adli-ghozian-426776185/" class="instagram"><i class='bx bxl-linkedin' aria-hidden="true" ></i></a>
+            </li>
+            <li data-text="gmail">
+                <a href="mailto:adlighozian1@gmail.com" class="instagram"><i class='bx bxl-gmail' aria-hidden="true" ></i></a>
+            </li>
+        </ul>
+
     </section>
 
 
@@ -183,12 +191,26 @@
             <div class="wave" id="wave3"></div>
             <div class="wave" id="wave4"></div>
         </div>
-        <p>© All Rights Reserved 2021 | Made by Love <i class='bx bxs-heart' style='color:#d21313'></i></p>
+        <p>© All Rights Reserved 2021 | Made by <i class='bx bxs-heart' style='color:#d21313'></i></p>
     </footer>
 
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+            max: 30,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".sci"));
+    </script>
 
     <!-- js -->
     <script src="script.js"></script>
+    <!-- vanilla js -->
+
 
 </body>
 
