@@ -410,6 +410,7 @@ html {
 .contact .sci {
     display: flex;
     position: relative;
+    margin-top: 100px;
 }
 
 .contact .sci li {
@@ -453,7 +454,7 @@ html {
 
 .contact .sci li:hover::before {
     opacity: 1;
-    transform: translate(-50%, calc(-270% + 150px));
+    transform: translate(-50%, calc(-300% + 150px));
 }
 
 .js-tilt-glare {
