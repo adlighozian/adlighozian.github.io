@@ -387,28 +387,267 @@ html {
 /* batas=================================================================================================================================== */
 
 
-/* about */
+/* skills */
 
 .skills {
     display: flex;
     background: url('home2.png') no-repeat center;
     min-height: 100vh;
+    font-family: 'ubuntu', sans-serif;
     justify-content: center;
     align-items: center;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.skills a {
+    color: #44D62C;
+    text-decoration: none;
+}
+
+.skills .container {
+    position: relative;
+    width: 1320px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.skills .book {
+    position: relative;
+    width: 300px;
+    height: 270px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.skills .front {
+    z-index: 1;
+}
+
+.skills .front .frontcover .title {
+    color: #44D62C;
+    font-size: 13px;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+
+.skills .front li {
+    background: white;
+    border-radius: 10px;
+}
+
+.skills .back li {
+    /* background: #252525; */
+    border-radius: 10px;
+    width: 97.5% !important;
+}
+
+.skills .page>li {
+    background: -webkit-linear-gradient(left, #44D62C 0%, #252525 100%);
+    background: linear-gradient(left, red 0%, blue 100%);
+    box-shadow: inset 0px -1px 2px rgba(255, 255, 255, 0.1), inset -1px 0px 1px rgba(255, 255, 255, 0.2);
+    border-radius: 0px 5px 5px 0px;
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+}
+
+.skills .front {
+    transform: rotateY(-34deg) translateZ(8px);
+}
+
+.skills .back {
+    transform: rotateY(-15deg) translateZ(-8px);
+}
+
+.skills .page li:nth-child(1) {
+    transform: rotateY(-28deg);
+}
+
+.skills .page li:nth-child(2) {
+    transform: rotateY(-30deg);
+}
+
+.skills .page li:nth-child(3) {
+    transform: rotateY(-32deg);
+}
+
+.skills .page li:nth-child(4) {
+    transform: rotateY(-34deg);
+}
+
+.skills .page li:nth-child(5) {
+    transform: rotateY(-36deg);
+}
+
+.skills .front,
+.skills .back,
+.skills .front li,
+.skills .back li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.skills .front,
+.skills .back {
+    transform-origin: 0% 100%;
+}
+
+.skills .front {
+    transition: all 0.8s ease, z-index 0.6s;
+}
+
+.skills .front li:last-child {
+    transform: rotateY(180deg) translateZ(2px);
+}
+
+.skills .page,
+.skills .page>li {
+    position: absolute;
+}
+
+.skills .page {
+    width: 100%;
+    height: 98%;
+    top: 1%;
+    left: 3%;
+}
+
+.skills .page li {
+    transition-duration: 0.6s;
+}
+
+.skills .book:hover .front {
+    transform: rotateY(-145deg) translateZ(0);
+}
+
+.skills .book:hover>.page li:nth-child(1) {
+    transform: rotateY(-30deg);
+    transition: 1.5s;
+}
+
+.skills .book:hover>.page li:nth-child(2) {
+    transform: rotateY(-35deg);
+    transition: 1.8s;
+}
+
+.skills .book:hover>.page li:nth-child(3) {
+    transform: rotateY(-118deg);
+    transition: 1.6s;
+}
+
+.skills .book:hover>.page li:nth-child(4) {
+    transform: rotateY(-130deg);
+    transition: 1.4s;
+}
+
+.skills .book:hover>.page li:nth-child(5) {
+    transform: rotateY(-140deg);
+    transition: 1.2s;
 }
 
 
 /* batas=================================================================================================================================== */
 
 
-/* skills */
+/* project */
 
 .project {
-    display: flex;
     background: url('home2.png') no-repeat center;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
+    display: flex;
+}
+
+.project .swiper-wrapper {}
+
+.project .container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-box-reflect: below -10px linear-gradient(transparent 60%, #0009);
+}
+
+.project .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    min-height: 350px;
+    margin: 10px;
+}
+
+.project .swiper-container-3d .swiper-slide-shadow-left,
+.project .swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+
+.project .container .card {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background: #333;
+    padding: 60px 40px;
+    text-align: center;
+    overflow: hidden;
+    height: 450px;
+}
+
+.project .container .card .layer {
+    position: absolute;
+    top: calc(100% - 5px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#44D62C, #226B16);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.project .container .card:hover .layer {
+    top: 0;
+}
+
+.project .details {
+    margin-top: 30px;
+    font-family: 'ubuntu', sans-serif;
+}
+
+.project .status {
+    margin-top: 30px;
+    font-family: 'ubuntu', sans-serif;
+    padding: 5px;
+    border-radius: 10px;
+    background: #44D62C;
+}
+
+.project .container .card .content {
+    position: relative;
+    z-index: 2;
+}
+
+.project .container .card .content p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.project .img1 {
+    overflow: hidden;
+}
+
+.project .img1 img {
+    width: 70%;
+    border-radius: 50%;
 }
 
 

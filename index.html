@@ -19,6 +19,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- box icon -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 </head>
 
@@ -94,25 +96,158 @@
     <!-- Halaman Dua -->
 
     <section class="skills" id="skills">
+        <div class="container">
+            <div class="content">
+                <ul>
+                    <li>
+                        <div class="book">
+                            <ul class="front">
+                                <li>
+                                    <div class="frontcover">
+                                        <p class="title"> MY SKILLS</p>
+                                        <h2></h2>
+                                    </div>
+                                </li>
+                                <li></li>
+                            </ul>
+
+                            <ul class="page">
+                                <li></li>
+                                <li>
+                                    <a href="#">Nothing</a>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+
+                            <ul class="back">
+                                <li></li>
+                                <li></li>
+                            </ul>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 
 
     <!-- Halaman Tiga -->
 
     <section class="project" id="project">
+
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="#project">
+                            <div class="card">
+                                <div class="layer"></div>
+                                <div class="content">
+                                    <div class="img1">
+                                        <img src="asset/p1.png" alt="">
+                                    </div>
+                                    <p class="details">Foruspedia<br><span style="font-size: small;"></span></p>
+                                    <p class="status">Coming Soon</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://royalparking.co.id/" target="_blank">
+                            <div class="card">
+                                <div class="layer"></div>
+                                <div class="content">
+                                    <div class="img1">
+                                        <img src="asset/p2.png" alt="">
+                                    </div>
+                                    <p class="details">Royal Parking<br><span style="font-size: small;">website for a company</span></p>
+                                    <p class="status">Visit Website</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#project">
+                            <div class="card">
+                                <div class="layer"></div>
+                                <div class="content">
+                                    <div class="img1">
+                                        <img src="asset/p.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#project">
+                            <div class="card">
+                                <div class="layer"></div>
+                                <div class="content">
+                                    <div class="img1">
+                                        <img src="asset/p.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#project">
+                            <div class="card">
+                                <div class="layer"></div>
+                                <div class="content">
+                                    <div class="img1">
+                                        <img src="asset/p.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </section>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            // autoplay: {
+            //     delay: 5000,
+            //     disableOnInteraction: false
+            // },
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+        });
+    </script>
 
     <!-- Halaman empat-->
 
     <section class="contact" id="contact">
         <ul class="sci">
             <li data-text="linkedin">
-                <a href="https://www.linkedin.com/in/adli-ghozian-426776185/" class="instagram"><i class='bx bxl-linkedin' aria-hidden="true" ></i></a>
+                <a href="https://www.linkedin.com/in/adli-ghozian-426776185/" target="_blank"><i class='bx bxl-linkedin' aria-hidden="true" ></i></a>
             </li>
-
+            <li data-text="github">
+                <a href="https://github.com/adlighozian" target="_blank"><i class='bx bxl-github' aria-hidden="true"></i></a>
+            </li>
             <li data-text="gmail">
-                <a href="mailto:adlighozian1@gmail.com" class="instagram"><i class='bx bxl-gmail' aria-hidden="true" ></i></a>
+                <a href="mailto:adlighozian1@gmail.com" target="_blank"><i class='bx bxl-gmail' aria-hidden="true" ></i></a>
             </li>
         </ul>
 
@@ -128,7 +263,7 @@
             <div class="wave" id="wave3"></div>
             <div class="wave" id="wave4"></div>
         </div>
-        <p style="font-size: 10px;">© All Rights Reserved 2021 | Made by <i class='bx bxs-heart' style='color:#d21313'></i></p>
+        <p style="font-size: 10px;">© All Rights Reserved 2021 | Made with <i class='bx bxs-heart' style='color:#d21313'></i></p>
     </footer>
 
     <script src="vanilla-tilt.min.js"></script>
@@ -143,7 +278,6 @@
 
     <!-- js -->
     <script src="script.js"></script>
-    <!-- vanilla js -->
 
 
 </body>
