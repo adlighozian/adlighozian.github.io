@@ -568,13 +568,12 @@ html {
     display: flex;
 }
 
-.project .swiper-wrapper {}
-
 .project .container {
     position: relative;
-    max-width: 100%;
+    width: 1010px;
     overflow: hidden;
     -webkit-box-reflect: below -10px linear-gradient(transparent 60%, #0009);
+    /* background: blanchedalmond */
 }
 
 .project .swiper-slide {
