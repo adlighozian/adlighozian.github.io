@@ -5,35 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TAB START -->
     <title>Portfolio</title>
-
-    <!-- css -->
-    <link rel="stylesheet" href="style.css">
-    <!-- responsive -->
-    <link rel="stylesheet" href="responsive.css">
-    <!-- icon -->
-    <link href='icon.png' rel='shortcut icon'>
-    <!-- cdbjs -->
+    <link href='/assets/img/icon.png' rel='shortcut icon'>
+    <!-- TAB END -->
+    <!-- CSS START -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/style_hp.css" />
+    <link rel="stylesheet" href="/assets/css/style_laptop.css" />
+    <link rel="stylesheet" href="/assets/css/style_tablet.css" />
+    <!-- CSS END -->
+    <!-- CDN STAR -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- box icon -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- CDN END -->
 </head>
 
 <body>
+    <!-- BUTTON_UP START -->
     <div class="scroll-up-btn">
         <i class='bx bx-rocket' id="rocket"></i>
     </div>
-
-
-    <!-- navbar -->
-
-    <nav class="navbar">
-        <div class="max-width">
+    <!-- BUTTON_UP END -->
+    <header>
+        <!-- NAVBAR START -->
+        <nav class="navbar">
             <div class="logo"><a href="#home">Port<span>folio.</span></a></div>
             <ul class="menu">
                 <li class="links">
@@ -41,11 +40,6 @@
                         <span>Home</span>
                     </a>
                 </li>
-                <!-- <li class="links">
-                    <a href="#skills">
-                        <span>skills</span>
-                    </a>
-                </li> -->
                 <li class="links">
                     <a href="#project">
                         <span>project</span>
@@ -57,231 +51,150 @@
                     </a>
                 </li>
             </ul>
-        </div>
-    </nav>
-
-    <section class="top" style="background: black;" id="top">
-    </section>
-
-
-    <!-- halaman satu -->
-
-    <section class="home" id="home">
-        <div class="max-width">
+        </nav>
+        <!-- NAVBAR END -->
+    </header>
+    <main>
+        <!-- HOME START -->
+        <section class="top" id="top">
+        </section>
+        <section class="home" id="home">
             <div class="home-content">
                 <div class="text-1">Hello my name is</div>
                 <div class="text-2">Muhammad Adli Ghozian</div>
                 <div class="text-3">And I'm a <span class="typing-1"></span></div>
                 <a href="#contact" style="--clr:#44D62C;--i:0;"><span>Contact me</span></a>
-            </div>
-        </div>
-
-        <div class="cube">
-            <div class="top">
-                <i id='cube1' class='bx bx-chevron-left'></i>
-                <p>CSS</p>
-                <i id='cube1' class='bx bx-chevron-right'></i>
-            </div>
-            <div>
-                <span style="--i:0;"></span>
-                <span style="--i:1;"></span>
-                <span style="--i:2;"></span>
-                <span style="--i:3;"></span>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- Halaman Dua -->
-
-    <!-- <section class="skills" id="skills">
-        <div class="container">
-            <div class="content">
-                <ul>
-                    <li>
-                        <div class="book">
-                            <ul class="front">
-                                <li>
-                                    <div class="frontcover">
-                                        <p class="title"> MY SKILLS</p>
-                                        <h2></h2>
-                                    </div>
-                                </li>
-                                <li></li>
-                            </ul>
-
-                            <ul class="page">
-                                <li></li>
-                                <li>
-                                    <a href="#">Nothing</a>
-                                </li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-
-                            <ul class="back">
-                                <li></li>
-                                <li></li>
-                            </ul>
-
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section> -->
-
-
-    <!-- Halaman Tiga -->
-
-    <section class="project" id="project">
-
-        <div class="container">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <a href="#project">
-                            <div class="card">
-                                <div class="layer"></div>
-                                <div class="content">
-                                    <div class="img1">
-                                        <img src="asset/p1.png" alt="">
-                                    </div>
-                                    <p class="details">Foruspedia<br><span style="font-size: small;"></span></p>
-                                    <p class="status">Coming Soon</p>
-                                </div>
-                            </div>
-                        </a>
+                <div class="cube">
+                    <div class="top">
+                        <i id='cube1' class='bx bx-chevron-left'></i>
+                        <p>CSS</p>
+                        <i id='cube1' class='bx bx-chevron-right'></i>
                     </div>
-
-                    <div class="swiper-slide">
-                        <a href="https://royalparking.co.id/" target="_blank">
-                            <div class="card">
-                                <div class="layer"></div>
-                                <div class="content">
-                                    <div class="img1">
-                                        <img src="asset/p2.png" alt="">
-                                    </div>
-                                    <p class="details">Royal Parking<br><span style="font-size: small;">website for a company</span></p>
-                                    <p class="status">Visit Website</p>
-                                </div>
-                            </div>
-                        </a>
+                    <div>
+                        <span style="--i:0;"></span>
+                        <span style="--i:1;"></span>
+                        <span style="--i:2;"></span>
+                        <span style="--i:3;"></span>
                     </div>
-
-                    <div class="swiper-slide">
-                        <a href="www.sihure.com" target="_blank">
-                            <div class="card">
-                                <div class="layer"></div>
-                                <div class="content">
-                                    <div class="img1">
-                                        <img src="asset/p3.png" alt="">
-                                    </div>
-                                    <p class="details">Sihure<br><span style="font-size: small;">an admin website for the company</span></p>
-                                    <p class="status">Visit Website</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#project">
-                            <div class="card">
-                                <div class="layer"></div>
-                                <div class="content">
-                                    <div class="img1">
-                                        <img src="asset/p.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#project">
-                            <div class="card">
-                                <div class="layer"></div>
-                                <div class="content">
-                                    <div class="img1">
-                                        <img src="asset/p.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
                 </div>
             </div>
-        </div>
-
-    </section>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".swiper-container", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false
-            },
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-            },
-        });
-    </script>
-
-    <!-- Halaman empat-->
-
-    <section class="contact" id="contact">
-        <ul class="sci">
-            <li data-text="linkedin">
-                <a href="https://www.linkedin.com/in/adli-ghozian-426776185/" target="_blank"><i class='bx bxl-linkedin' aria-hidden="true" ></i></a>
-            </li>
-            <li data-text="github">
-                <a href="https://github.com/adlighozian" target="_blank"><i class='bx bxl-github' aria-hidden="true"></i></a>
-            </li>
-            <li data-text="gmail">
-                <a href="mailto:adlighozian1@gmail.com" target="_blank"><i class='bx bxl-gmail' aria-hidden="true" ></i></a>
-            </li>
-        </ul>
-
-    </section>
-
-
-    <!-- Footer -->
-
+        </section>
+        <!-- HOME END -->
+        <!-- PROJECT START -->
+        <section class="project" id="project">
+            <div class="container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#project">
+                                <div class="card">
+                                    <div class="layer"></div>
+                                    <div class="content">
+                                        <div class="img1">
+                                            <img src="/assets/img/p1.png" alt="">
+                                        </div>
+                                        <p class="details">Foruspedia<br><span style="font-size: small;"></span></p>
+                                        <p class="status">Coming Soon</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://royalparking.co.id/" target="_blank">
+                                <div class="card">
+                                    <div class="layer"></div>
+                                    <div class="content">
+                                        <div class="img1">
+                                            <img src="/assets/img/p2.png" alt="">
+                                        </div>
+                                        <p class="details">Royal Parking<br><span style="font-size: small;">website for
+                                                a
+                                                company</span></p>
+                                        <p class="status">Visit Website</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="www.sihure.com" target="_blank">
+                                <div class="card">
+                                    <div class="layer"></div>
+                                    <div class="content">
+                                        <div class="img1">
+                                            <img src="/assets/img/p3.png" alt="">
+                                        </div>
+                                        <p class="details">Sihure<br><span style="font-size: small;">an admin website
+                                                for
+                                                the company</span></p>
+                                        <p class="status">Visit Website</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#project">
+                                <div class="card">
+                                    <div class="layer"></div>
+                                    <div class="content">
+                                        <div class="img1">
+                                            <img src="/assets/img/p.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#project">
+                                <div class="card">
+                                    <div class="layer"></div>
+                                    <div class="content">
+                                        <div class="img1">
+                                            <img src="/assets/img/p.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PROJECT END -->
+        <!-- CONTACT START-->
+        <section class="contact" id="contact">
+            <ul class="sci">
+                <li data-text="linkedin">
+                    <a href="https://www.linkedin.com/in/adli-ghozian-426776185/" target="_blank"><i
+                            class='bx bxl-linkedin' aria-hidden="true"></i></a>
+                </li>
+                <li data-text="github">
+                    <a href="https://github.com/adlighozian" target="_blank"><i class='bx bxl-github'
+                            aria-hidden="true"></i></a>
+                </li>
+                <li data-text="gmail">
+                    <a href="mailto:adlighozian1@gmail.com" target="_blank"><i class='bx bxl-gmail'
+                            aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </section>
+        <!-- CONTACT END -->
+    </main>
     <footer>
+        <!-- FOOTER START -->
         <div class="wave">
             <div class="wave" id="wave1"></div>
             <div class="wave" id="wave2"></div>
             <div class="wave" id="wave3"></div>
             <div class="wave" id="wave4"></div>
         </div>
-        <p style="font-size: 10px;">© All Rights Reserved 2021 | Made with <i class='bx bxs-heart' style='color:#d21313'></i></p>
+        <p style="font-size: 10px;">© All Rights Reserved 2021 | Made with <i class='bx bxs-heart'
+                style='color:#d21313'></i></p>
+        <!-- FOOTER END -->
     </footer>
-
-    <script src="vanilla-tilt.min.js"></script>
-    <script>
-        VanillaTilt.init(document.querySelectorAll(".sci li a"), {
-            max: 30,
-            speed: 400,
-            glare: true,
-            "max-glare": 1,
-        });
-    </script>
-
-    <!-- js -->
-    <script src="script.js"></script>
-
-
+    <!-- JS START -->
+    <script src="/assets/js/vanilla-tilt.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <!-- JS END -->
 </body>
 
 </html>

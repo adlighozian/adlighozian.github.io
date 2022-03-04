@@ -6,6 +6,12 @@ var typed = new Typed(".typing-1", {
     loop: true
 });
 
+VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+    max: 30,
+    speed: 400,
+    glare: true,
+    "max-glare": 1,
+});
 /* batas=================================================================================================================================== */
 
 // navbar scroll
@@ -47,3 +53,24 @@ activeMenu();
 window.addEventListener("scroll", activeMenu);
 
 /* batas=================================================================================================================================== */
+
+var swiper = new Swiper(".swiper-container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+    },
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+});
+
+
+
