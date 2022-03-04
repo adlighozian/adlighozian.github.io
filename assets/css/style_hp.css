@@ -10,7 +10,7 @@ body {
     position: fixed;
     height: 45px;
     width: 42px;
-    right: 0px;
+    right: 10px;
     z-index: 9999;
     bottom: 0px;
     transition: all 0.3s ease;
@@ -380,7 +380,7 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    -webkit-box-reflect: below -10px linear-gradient(transparent 60%, #0009);
+    /* -webkit-box-reflect: below -10px linear-gradient(transparent 60%, #0009); */
 
 }
 
@@ -465,8 +465,7 @@ body {
 
 .contact {
     display: flex;
-    background: url('home2.png') no-repeat center;
-    min-height: 60vh;
+    min-height: 70vh;
     justify-content: center;
     align-items: center;
 }
@@ -551,11 +550,11 @@ footer {
     width: 100%;
     background: #44D62C;
     min-height: 200px;
-    padding: 20px 50px;
+    /* padding: 20px 50px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    bottom: 0;
 }
 
 footer .wave {
